@@ -1,6 +1,6 @@
 # Minigame Fórmula 1 em C 🏎
 
-Este é um jogo simples de Fórmula 1 desenvolvido em C, onde o jogador controla um carro em uma pista reta e deve completar o trajeto no menor tempo possível. O objetivo é controlar a velocidade do carro para desviar de obstáculos e atingir o menor tempo ao final da corrida.
+Este é um jogo simples de Fórmula 1 desenvolvido em C, onde o jogador controla um carro em uma pista reta e deve acumular pontuação enquanto realiza o trajeto no modo de 30 segundos ou no modo infinito. O objetivo é controlar a velocidade do carro para desviar de obstáculos e acumular a maior pontuação possível em qualquer modo a fim de estipular recordes. A velocidade com que executa o trajeto faz diferença para sua pontuação final.
 
 ## 🎮 Funcionalidades
 
@@ -13,12 +13,14 @@ Este é um jogo simples de Fórmula 1 desenvolvido em C, onde o jogador controla
 *Sistema de Obstáculos*:
   - Desvie de outros carros na pista para evitar colisões.
   - Se colidir com outro carro, será *Game Over*.
+  - No modo de 30 segundos, se sua pontuação estiver maior que seu recorde atual, porém você colidir com outro carro antes de finalizar o tempo, seu recorde atual permenecerá o mesmo, pois concluir o trajeto é uma premissa fundamental no jogo.
 
-*Cronômetro*:
-  - Um cronômetro é exibido na tela para acompanhar o tempo da corrida.
+*Modos de jogo*:
+  - 30 segundos: o jogador tem por objetivo percorrer o trajeto manipulando sua velocidade e desviando dos outros carros, tentando chegar ao fim dos 30 segundos realizando a maior pontuação possível. Ao final, é mostrado sua pontuação e se deseja jogar novamente para tentar quebrar seu recorde.
+  - Infinito:o jogador tem por objetivo percorrer o trajeto manipulando sua velocidade e desviando dos outros carros de maneira "infinita", até que venha a colidir em algum carro e encerre o jogo. Ao final, é mostrado sua pontuação e se deseja jogar novamente para tentar quebrar seu recorde.
 
 *Pontuação*:
-  - O objetivo é completar a corrida no menor tempo possível.
+  - O objetivo é desviar dos outros carros e manipular a sua velocidade para que atinja a maior pontuação possível.
   - Seu tempo final será exibido ao final da partida, com a possibilidade de bater seu próprio recorde.
 
 ## 🚀 Como Jogar
@@ -29,30 +31,16 @@ Este é um jogo simples de Fórmula 1 desenvolvido em C, onde o jogador controla
   
 ### 2. Compilar o jogo
 - Certifique-se de ter um compilador C instalado (por exemplo, gcc). Para compilar o jogo, utilize o comando:
-- gcc minigame-f1.c -o minigame-f1
+- gcc src/.c -I include -o formula1_g
 
 ### 3. Executar o jogo
 - ./minigame-f1
-
-## 🎮 Controles do Jogo
-- Acelerar: W
-- Desacelerar: S
-- Desviar: Use  (A← →D) para desviar dos obstáculos.
-
-## 📊 Pontuação
-- O jogo é baseado no menor tempo.
-- Ao completar a corrida, seu tempo será registrado. Tente bater seu próprio recorde em novas tentativas!
 
 ## 🛠 Tecnologias Utilizadas
 - Linguagem C
 - Ambiente de console (CLI)
 - Compilador GCC (ou similar)
 
-##💡 Próximas Melhorias
-- Adicionar diferentes níveis de dificuldade (fácil, médio, difícil).
-- Implementar curvas na pista.
-- Incluir sons para acelerar e colisões.
-- Salvar pontuações em um arquivo.
 
 ## 🤝 Contribuições
 - Contribuições são bem-vindas! Sinta-se à vontade para abrir um pull request ou relatar problemas na aba Issues.
@@ -68,9 +56,9 @@ Este é um jogo simples de Fórmula 1 desenvolvido em C, onde o jogador controla
 | Antônio Tenório    | Developer          | @antoniotfs        |
 | Gustavo Ferraz     | Developer          | @gustvcarvalho     |
 
-# Nome da disciplina: 
-## Programação Imperativa e Funcional - 2024.2
-# Instituição de ensino: 
-## CESAR School
-# Professor:
-## Diego de Freitas
+## Nome da disciplina: 
+#### Programação Imperativa e Funcional - 2024.2
+## Instituição de ensino: 
+#### CESAR School
+## Professor:
+#### Diego de Freitas
