@@ -26,15 +26,15 @@ Este é um jogo simples de Fórmula 1 desenvolvido em C, onde o jogador controla
 ## 🚀 Como Jogar
 
 ### 1. Clonar o repositório
-- git clone https://github.com/aironvalentim/minigame-f1.git
-- cd minigame-f1
+- git clone https://github.com/aironvalentim/formula1-minigame.git
+- cd formula1-minigame
   
 ### 2. Compilar o jogo
 - Certifique-se de ter um compilador C instalado (por exemplo, gcc). Para compilar o jogo, utilize o comando:
-- gcc src/.c -I include -o formula1_g
+- gcc src/.c -I include -o formula1-minigame_g
 
 ### 3. Executar o jogo
-- ./minigame-f1
+- ./formula1-minigame
 
 ## 🛠 Tecnologias Utilizadas
 - Linguagem C
