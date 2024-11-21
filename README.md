@@ -31,7 +31,7 @@ Este é um jogo simples de Fórmula 1 desenvolvido em C, onde o jogador controla
   
 ### 2. Compilar o jogo
 - Certifique-se de ter um compilador C instalado (por exemplo, gcc). Para compilar o jogo, utilize o comando:
-- gcc src/.c -I include -o formula1-minigame
+- gcc src/*.c -I include -o formula1-minigame
 
 ### 3. Executar o jogo
 - ./formula1-minigame
